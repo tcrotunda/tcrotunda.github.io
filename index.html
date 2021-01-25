@@ -21,7 +21,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="static/css/styles.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
@@ -35,6 +35,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#home">Home</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link " href="#portfolio">Portfolio</a>
                     </li>
@@ -53,9 +56,9 @@
     </nav>
 
     <!-- Header -->
-    <header class="masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center" id="home">
         <div class="container">
-            <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="assets/img/jane.jpg" alt="" />
+            <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="static/images/my_photo/tc_rotunda2a.jpeg" alt="" />
             <h1 class="mb-0">Hi, I'm TC</h1>
             <hr />
             <h2 class="mb-0">
@@ -64,11 +67,11 @@
 
             <!-- Replace this text with your brand statement or other short text about you. -->
             <p class="brand-statement">
-                6+ years of experience working as a Business Analyst or Data Analyst for some top financial firms such as BNY Mellon, JP Morgan, and Charles Schwab.
+                6+ years of experience working as a Business Analyst or Data Analyst for top financial firms such as BNY Mellon, JP Morgan, and Charles Schwab.
                 I graduated from Suffolk University, Sawyer Business School, where I earned a degree in Management with a Minor in Information Systems. 
-                I have also completed a data analytics bootcamp through UC Berkeley where I developed skills such as Python, R, JavaScript, Tableau.<br>
+                I have also completed a data analytics bootcamp through UC Berkeley where I developed skills such as Python, R, JavaScript, Tableau.<br><br>
                 I learn quickly and pick up new technologies easily. A few examples are: JIRA, Confluence, SAP Business Objects, and taking on the role of Pseudo Scrum Master.
-                Additionally, I get along with many different types of people, which is evident based on working with trading desks where there are diverse personality types.<br>
+                Additionally, I get along with many different types of people, which is evident based on working with trading desks where there are diverse personality types.<br><br>
                 As a Data Analyst I hope to use data to help companies drive business strategy, improve performance, and deliver unparalleled user experiences. 
                 Working in these pseudo technology roles I have been able to work on teams with people who have a wide variety of roles and experience. 
                 I often speak with both sides of the business: end users and developers, which furthers my ability to work with many different personality types and business perspectives.
@@ -90,11 +93,11 @@
                     <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#portfolio-modal-1">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
                             <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <p>Project #1</p>
+                                <p>Mars</p>
                                 <i class="fas fa-search-plus fa-2x"></i>
                             </div>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/project1.jpg" alt="" />
+                        <img class="img-fluid" src="static/images/portfolio/mars.jpg" alt="" />
                     </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
@@ -117,39 +120,6 @@
                             </div>
                         </div>
                         <img class="img-fluid" src="assets/img/portfolio/project3.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#portfolio-modal-4">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <p>Project #4</p>
-                                <i class="fas fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/project4.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#portfolio-modal-5">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <p>Project #5</p>
-                                <i class="fas fa-search-plus fa-2x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/project5.jpg" alt="" />
-                    </a>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <a class="portfolio-item d-block mx-auto" data-toggle="modal" data-target="#portfolio-modal-6">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <p>Project #6</p>
-                                <i class="fas fa-search-plus fa-2x"></i>
-                            </div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/project6.jpg" alt="" />
                     </a>
                 </div>
             </div>
@@ -190,7 +160,7 @@
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a class="btn btn-lg btn-outline-light" href="resume/rotunda_resume.pdf">
+                <a class="btn btn-lg btn-outline-light" target="_blank" rel="noopener noreferrer" href="resume/rotunda_resume_web.pdf">
                     <i class="fas fa-download mr-2"></i>
                     Resume
                 </a>
@@ -247,17 +217,12 @@
                     </p>
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a class="btn-social text-center rounded-circle" href="#">
-                                <i class="fab fa-fw fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a class="btn-social text-center rounded-circle" href="https://www.linkedin.com/in/tcrotunda/">
+                            <a class="btn-social text-center rounded-circle" target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/tcrotunda/">
                                 <i class="fab fa-fw fa-linkedin-in"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="btn-social text-center rounded-circle" href="https://github.com/tcrotunda">
+                            <a class="btn-social text-center rounded-circle" target="_blank" rel="noopener noreferrer" href="https://github.com/tcrotunda">
                                 <i class="fab fa-github"></i>
                             </a>
                         </li>
@@ -269,13 +234,13 @@
 
     <div class="copyright py-4 text-center text-white">
         <div class="container">
-            <small>Copyright &copy; TC Rotunda 2020-2021</small>
+            <small>Copyright &copy; TC Rotunda 2020</small>
         </div>
     </div>
 
 
 
-    <!-- Portfolio Modals: These are what open up when you click on each project. Replace the information as needed. -->
+    <!-- Portfolio Modals: These are what opens when you click on each project -->
     <!-- Portfolio Modal 1 -->
     <div class="modal portfolio-modal mfp-hide" id="portfolio-modal-1">
         <div class="portfolio-modal-dialog bg-white">
@@ -286,21 +251,15 @@
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-secondary text-uppercase mb-0">
-                            Project Name 1
+                            Mars
                         </h2>
                         <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project1.jpg" alt="" />
+                        <img class="img-fluid mb-5" src="static/images/portfolio/mars.jpg" alt="" />
                         <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Mollitia neque assumenda ipsam
-                            nihil, molestias magnam, recusandae quos quis
-                            inventore quisquam velit asperiores, vitae?
-                            Reprehenderit soluta, eos quod consequuntur
-                            itaque. Nam.
+                            Ready to dive into the world of Mars? This project scrapes the lastest data from multiple pages.
+                            The lastest Mars news is scraped first, followed by the lastest image, Mars facts, and finally hemisphere images.
                         </p>
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="#">
-                            Live Demo</a>
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="#">
+                        <a class="btn btn-primary portfolio-modal-dismiss" target="_blank" rel="noopener noreferrer" href="https://github.com/tcrotunda/mars">
                             View Code</a>
                     </div>
                 </div>
@@ -356,108 +315,6 @@
                         </h2>
                         <hr class="star-dark mb-5" />
                         <img class="img-fluid mb-5" src="img/portfolio/project3.jpg" alt="" />
-                        <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Mollitia neque assumenda ipsam
-                            nihil, molestias magnam, recusandae quos quis
-                            inventore quisquam velit asperiores, vitae?
-                            Reprehenderit soluta, eos quod consequuntur
-                            itaque. Nam.
-                        </p>
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="#">
-                            Live Demo
-                        </a>
-
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="#">
-                            View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 4 -->
-    <div class="modal portfolio-modal mfp-hide" id="portfolio-modal-4">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button portfolio-modal-dismiss" href="#" data-dismiss="modal">
-                <i class="fa fa-2x fa-times close-link"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">
-                            Project Name
-                        </h2>
-                        <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project4.jpg" alt="" />
-                        <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Mollitia neque assumenda ipsam
-                            nihil, molestias magnam, recusandae quos quis
-                            inventore quisquam velit asperiores, vitae?
-                            Reprehenderit soluta, eos quod consequuntur
-                            itaque. Nam.
-                        </p>
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="#">
-                            Live Demo
-                        </a>
-
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="#">
-                            View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 5 -->
-    <div class="modal portfolio-modal mfp-hide" id="portfolio-modal-5">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button portfolio-modal-dismiss" href="#" data-dismiss="modal">
-                <i class="fa fa-2x fa-times close-link"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">
-                            Project Name
-                        </h2>
-                        <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project5.jpg" alt="" />
-                        <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Mollitia neque assumenda ipsam
-                            nihil, molestias magnam, recusandae quos quis
-                            inventore quisquam velit asperiores, vitae?
-                            Reprehenderit soluta, eos quod consequuntur
-                            itaque. Nam.
-                        </p>
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="#">
-                            Live Demo
-                        </a>
-
-                        <a class="btn btn-primary portfolio-modal-dismiss" href="#">
-                            View Code</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Portfolio Modal 6 -->
-    <div class="modal portfolio-modal mfp-hide" id="portfolio-modal-6">
-        <div class="portfolio-modal-dialog bg-white">
-            <a class="close-button portfolio-modal-dismiss" href="#" data-dismiss="modal">
-                <i class="fa fa-2x fa-times close-link"></i>
-            </a>
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2 class="text-secondary text-uppercase mb-0">
-                            Project Name
-                        </h2>
-                        <hr class="star-dark mb-5" />
-                        <img class="img-fluid mb-5" src="img/portfolio/project6.jpg" alt="" />
                         <p class="mb-5">
                             Lorem ipsum dolor sit amet, consectetur
                             adipisicing elit. Mollitia neque assumenda ipsam
